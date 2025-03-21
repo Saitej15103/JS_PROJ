@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px !important;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.nav-logo img {
+    border-radius: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effects */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Underline Animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Add Music Button */
+.add-music-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-music-btn {
+    background-color: #2a5298;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover and Click Effects */
+.add-music-btn:hover {
+    background-color: #1e3c72;
+    transform: scale(1.05);
+}
+
+.add-music-btn:active {
+    transform: scale(0.95);
+}
+
+/* Modal Customization */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #2a5298;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+    color: #2a5298;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Modal Footer */
+.modal-footer {
+    border-top: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(30, 60, 114, 0.9);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .add-music-btn {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .modal-dialog {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+/* ------------------------ */
+#addMusicModal{
+    text-transform: uppercase;
+}
+
+.music-card {
+    background: linear-gradient(135deg, #6A5ACD, #483D8B);
+    width: 240px;
+    height: 420px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    gap: 10px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.music-card:hover {
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.music-card > img {
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.music-card img:hover {
+    transform: scale(1.02);
+}
+
+.music-card h3, .music-card p {
+    text-align: center;
+    margin: 5px 0;
+    color: #E0E0E0;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.music-card h3{
+    font-size: 20px;
+}
+.music-card p{
+    font-size: 14px;
+}
+
+.music-card h3:hover, .music-card p:hover {
+    transform: scale(1.08);
+    color: #ADFF2F;
+}
+
+.music-card audio {
+    /* padding: 10px; */
+    /* width: 90%; */
+    /* border-radius: 10px; */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#audiosize{
+    width: 80%;
+    height: 45px;
+}
+
+.music-card audio:hover {
+    transform: scale(1.05);
+}
+#icon{
+    /* background-color:#1e3c72; */
+    /* size: 60px; */
+    background:none;
+}
+#childcard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 10px;
+    gap: 10px;
+}

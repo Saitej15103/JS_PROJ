@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo"><img src="../Images/TREND_TROVE_LOGO.png" alt="" width="70" height="60"></div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Trends Chart</a>
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#profileModal">Profile</a>
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <div class="icons">
+        <div class="trending">
+            <a href="../Fashion/Fashion.html"><img src="../Images/vid.png" alt="" width="400" height="400"></a>
+            <h2>Fashion</h2>
+        </div>
+
+        <div class="trending">
+            <a href="../Music/Music.html"><img src="../Images/mus.png" alt="music" width="400" height="400"></a>
+            <h2>Music</h2>
+        </div>
+        
+        <div class="trending">
+            <a href="../Blogs/Blogs.html"><img src="../Images/bl.webp" alt="" width="400" height="400"></a>
+            <h2>Blogs</h2>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../Images/user_placeholder.png" alt="Profile Image" class="profile-img mb-3" width="100" height="100">
+                    <h5>Username: JohnDoe</h5>
+                    <p>Email: johndoe@example.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

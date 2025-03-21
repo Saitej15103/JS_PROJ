@@ -1,0 +1,139 @@
+{
+    "Categories": [
+        {
+            "id": 1,
+            "title": "Elegant Men's Cotton Kurta Pajama Set – Traditional Ethnic Wear",
+            "price": 3319,
+            "description": "Made from 100% breathable cotton, this kurta pajama set is perfect for traditional occasions, festivals, and daily wear. The lightweight fabric ensures all-day comfort.",
+            "category": "mens kurtha pajama",
+            "image": "https://i.pinimg.com/736x/1b/52/7e/1b527e61586344ee4265f868567516dc.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 2,
+            "title": "Royal Embroidered Sherwani – Regal Wedding & Festive Attire",
+            "price": 3299,
+            "description": "A luxurious sherwani crafted with intricate embroidery and premium fabric, perfect for weddings, receptions, and grand celebrations.",
+            "category": "mens sherwani",
+            "image": "https://i.pinimg.com/736x/ef/d3/8b/efd38b4c81b36532573d0e886bbf318b.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 3,
+            "title": "Traditional Festive Dhoti Kurta",
+            "price": 3299,
+            "description": "A classic dhoti kurta set designed for festivals and special occasions, featuring fine fabric and traditional craftsmanship.",
+            "category": "mens dhoti kurta",
+            "image": "https://i.pinimg.com/736x/f2/f3/cb/f2f3cb11775e1c26ba687a33637b04ec.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 4,
+            "title": "Classic Embroidered Pathani Suit",
+            "price": 2899,
+            "description": "A traditional Pathani suit with intricate embroidery, perfect for festive and cultural occasions.",
+            "category": "mens pathani suit",
+            "image": "https://i.pinimg.com/736x/ac/bd/60/acbd60b5664288bc4ac250b717602460.jpg",
+            "rating": 4.4
+        },
+        {
+            "id": 5,
+            "title": "Handcrafted Kashmiri Embroidered Phiran",
+            "price": 4999,
+            "description": "A beautifully handcrafted Phiran adorned with intricate Kashmiri embroidery, perfect for cultural and festive occasions.",
+            "category": "mens phiran",
+            "image": "https://i.pinimg.com/736x/ab/04/3e/ab043e14c1107e318da5ad539a0f0045.jpg",
+            "rating": 4.7
+        },
+        {
+            "id": 6,
+            "title": "Classic Jodhpuri Breeches – Timeless Elegance",
+            "price": 3299,
+            "description": "A perfect blend of tradition and style, these classic Jodhpuri breeches are tailored for a regal and sophisticated look.",
+            "category": "mens Jodhpuri Breeches",
+            "image": "https://rajanyas.com/cdn/shop/files/Untitleddesign_15.png?v=1694776373&width=1100",
+            "rating": 4.5
+        },
+        {
+            "id": 7,
+            "title": "Traditional Cotton Dhoti – Classic & Comfortable",
+            "price": 3299,
+            "description": "A breathable and lightweight cotton dhoti, perfect for traditional ceremonies, pujas, and cultural events.",
+            "category": "mens dhoti",
+            "image": "https://ramrajcotton.in/cdn/shop/files/01_d524a2b5-ecee-4c80-93a7-bfac3a4bbefb.jpg?v=1697707922&width=900",
+            "rating": 4.5
+        },
+        {
+            "id": 8,
+            "title": "Embroidered Georgette Salwar Kameez – Elegant & Graceful",
+            "price": 3299,
+            "description": "A beautifully embroidered georgette salwar kameez that combines elegance with comfort, perfect for festive and formal occasions.",
+            "category": "womens salwar kameez",
+            "image": "https://i.pinimg.com/736x/f1/66/dc/f166dcf296fa1d2755a3c1a724c74d90.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 9,
+            "title": "Royal Embroidered Anarkali Suit – Regal & Elegant",
+            "price": 3299,
+            "description": "A breathtaking Anarkali suit featuring intricate embroidery and a flowing silhouette, perfect for weddings and grand celebrations.",
+            "category": "womens anarkali suits",
+            "image": "https://i.pinimg.com/736x/fe/68/5c/fe685c8c6cc424b844177c3bd47e2073.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 10,
+            "title": "Bridal Zari Embroidered Lehenga Choli – Timeless Elegance",
+            "price": 3299,
+            "description": "A stunning bridal lehenga choli adorned with intricate zari embroidery, perfect for weddings and grand celebrations.",
+            "category": "womens lehenga choli",
+            "image": "https://i.pinimg.com/736x/9e/98/bd/9e98bd94f14f8a65fb0777f0dc08e39f.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 11,
+            "title": "Elegant Cotton Churidar Kurta – Everyday Comfort",
+            "price": 3299,
+            "description": "A breathable and soft cotton churidar kurta, designed for all-day comfort while maintaining a stylish ethnic appeal.",
+            "category": "womens churidar kurta",
+            "image": "https://i.pinimg.com/736x/9e/38/5c/9e385cfa2aff818a52cf0b7bcf233bc4.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 12,
+            "title": "Traditional Silk Pattu Pavadai – Timeless Grace",
+            "price": 3299,
+            "description": "A classic silk Pattu Pavadai with rich zari work, perfect for weddings, festivals, and cultural celebrations.",
+            "category": "womens pattu pavadai",
+            "image": "https://i.pinimg.com/736x/b1/a8/fc/b1a8fc96cc4877abbd3b7874a4695737.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": 13,
+            "title": "Traditional Assamese Mekhela Sador – Timeless Elegance",
+            "price": 3599,
+            "description": "A classic handwoven Mekhela Sador featuring intricate motifs and traditional patterns, perfect for cultural events and festivities.",
+            "category": "womens Mekhela Sador",
+            "image": "https://i.pinimg.com/736x/3b/52/a3/3b52a36f1963fb4af8854bad8251a236.jpg",
+            "rating": 4.6
+        },
+        {
+            "id": 14,
+            "title": "Embroidered Kashmiri Phiran – Traditional Winter Wear",
+            "price": 3299,
+            "description": "A beautifully embroidered Kashmiri Phiran, designed with intricate threadwork, offering warmth and elegance for cold seasons.",
+            "category": "womens Phiran",
+            "image": "https://i.pinimg.com/736x/b8/a6/71/b8a6719e06a1907de14631d3aca8feca.jpg",
+            "rating": 4.7
+        },
+        {
+            "id": 15,
+            "title": "Kanjivaram Silk Saree – Timeless Elegance",
+            "price": 7999,
+            "description": "A masterpiece of tradition, this Kanjivaram silk saree features intricate zari work and a rich texture, perfect for weddings and festive occasions.",
+            "category": "womens Saree",
+            "image": "https://i.pinimg.com/736x/97/c1/54/97c154119f4563861e9067d8cd08d637.jpg",
+            "rating": 4.9
+        }
+    ]
+}

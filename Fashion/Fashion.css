@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px !important;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.nav-logo img {
+    border-radius: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effects */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Underline Animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Add Music Button */
+.add-music-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-music-btn {
+    background-color: #2a5298;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover and Click Effects */
+.add-music-btn:hover {
+    background-color: #1e3c72;
+    transform: scale(1.05);
+}
+
+.add-music-btn:active {
+    transform: scale(0.95);
+}
+
+/* Modal Customization */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #2a5298;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+    color: #2a5298;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Modal Footer */
+.modal-footer {
+    border-top: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(30, 60, 114, 0.9);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .add-music-btn {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .modal-dialog {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+#heading{
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+
+
+
+
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.categories {
+    width: 20vw;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100vh;
+    border-right: 2px solid #ddd;
+    text-align: center;
+}
+
+.fashion-items {
+    width: 80vw;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.fashion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-card {
+    width: 160px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.category-card:hover {
+    background-color: #e0e0e0;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.fashion-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.fashion-card:hover {
+    transform: scale(1.05);
+}
+
+.fashion-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}

@@ -3,78 +3,148 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(245, 245, 245, 0.9); 
-  }
-  
-  .signup-container {
-    background-color: #fff; 
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.signup-container {
+    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
-  }
-  
-  .signup-container h2 {
+}
+
+.signup-container h2 {
     margin-bottom: 30px;
-    color: #333; 
-  }
-  
-  .input-group {
+    color: #333;
+}
+
+.input-group {
     margin-bottom: 20px;
     text-align: left;
-  }
-  
-  .input-group label {
+}
+
+.input-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #333; 
-  }
-  
-  .input-group input {
+    color: #333;
+}
+
+.input-group input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9; 
-    color: #333; 
+    background-color: #f9f9f9;
+    color: #333;
     outline: none;
-    transition: border-color 0.3s ease-in-out; 
-  }
-  
-  .input-group input:focus {
-    border-color: #28a745; 
-  }
-  
-  .input-group input::placeholder {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+    border-color: #28a745;
+}
+
+.input-group input::placeholder {
     color: #999;
-  }
-  
-  .signup-btn {
+}
+
+.signup-btn {
     width: 100%;
     padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #28a745; 
+    background-color: #28a745;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-  }
+}
 
+p {
+    color: red;
+}
 
+/* ---------------------- Responsive Design ---------------------- */
 
+/* Mobile (up to 425px) */
+@media screen and (max-width: 425px) {
+    .signup-container {
+        width: 90%;
+        padding: 20px;
+    }
 
-/* ---------------------- */
+    .input-group input {
+        padding: 10px;
+    }
 
-p{
-  color: red;
+    .signup-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet (426px to 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .signup-container {
+        width: 80%;
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .input-group input {
+        padding: 12px;
+    }
+
+    .signup-btn {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
+
+/* Laptop (769px to 1440px) */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .signup-container {
+        width: 40%;
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .input-group input {
+        padding: 14px;
+    }
+
+    .signup-btn {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* 4K screens (1441px to 2560px) */
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    .signup-container {
+        width: 50%;
+        max-width: 700px;
+        padding: 40px;
+        font-size: 18px;
+    }
+
+    .input-group input {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .signup-btn {
+        padding: 18px;
+        font-size: 18px;
+    }
 }
