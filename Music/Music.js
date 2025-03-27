@@ -1,23 +1,28 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
 import { getDatabase, ref, set, get, push, remove } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js";
 
+// New Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDpQiXIVThebYvb8oet0cmdnP94pgEXOWw",
-    authDomain: "js-project-4f1d6.firebaseapp.com",
-    projectId: "js-project-4f1d6",
-    storageBucket: "js-project-4f1d6.appspot.com", 
-    messagingSenderId: "448192345524",
-    appId: "1:448192345524:web:2d54e119a089f2f3702ee1",
-    measurementId: "G-2R9VFES7DV"
+  apiKey: "AIzaSyCHi7YWw2ElIw73-SjsS9kzM2ghxiGa_xk",
+  authDomain: "newjsproject-65bdb.firebaseapp.com",
+  databaseURL: "https://newjsproject-65bdb-default-rtdb.firebaseio.com",  // Make sure this is added
+  projectId: "newjsproject-65bdb",
+  storageBucket: "newjsproject-65bdb.appspot.com",  // Corrected storageBucket
+  messagingSenderId: "1066069266880",
+  appId: "1:1066069266880:web:7d53f68492c5414d137825",
+  measurementId: "G-5JR92PL3CX"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+console.log("Firebase initialized successfully!");
+
+
 // Cloudinary API details
-const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dih2voun3/upload"; 
-const CLOUDINARY_UPLOAD_PRESET = "JS_Proj"; 
+const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dih2voun3/upload";
+const CLOUDINARY_UPLOAD_PRESET = "JS_Proj";
 
 // Get form elements
 const addMusicForm = document.getElementById("addMusicForm");
@@ -116,7 +121,7 @@ async function fetchMusicData() {
 }
 
 
-window.deleteMusic = async function(musicId) {
+window.deleteMusic = async function (musicId) {
     try {
         await remove(ref(db, `Music/${musicId}`)); // Delete from Firebase
         console.log("Music deleted successfully!");
